@@ -1,4 +1,4 @@
-
+require 'pry'
 class Dog 
   @@all = []
   attr_reader :name 
@@ -14,7 +14,7 @@ class Dog
  
    def self.all
         @@all.each{|name| puts name}
-       
+        binding.pry
     end
  
 end 
